@@ -1,14 +1,14 @@
 pipeline { 
     environment { 
-        registry = "kenkool23/newrepo" 
-        registryCredential = 'dockerhub'
+        registry = "sammydev3564/docker-project" 
+        registryCredential = 'dockerhublogin'
         dockerImage = '' 
     }
     agent any 
     stages { 
         stage('Cloning our Git') { 
             steps { 
-                git 'https://github.com/kenkool23/dockerproject.git' 
+                git 'https://github.com/Sammydev3564/dockerproject.git' 
             }
         } 
         stage('Building image Docker') { 
